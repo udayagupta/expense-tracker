@@ -28,6 +28,12 @@ let expenses = []
 
 expenses = JSON.parse(localStorage.getItem("expenses"))
 
+if (expenses === null) {
+    expenses = []
+} else {
+    expenses = JSON.parse(localStorage.getItem("expenses"))
+}
+
 console.log(expenses)
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 const months = {

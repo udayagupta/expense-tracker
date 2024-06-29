@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-grey: rgb(36, 43, 50);
+    --light-grey: rgb(63, 76, 88);
+    --dark-blue: rgb(28, 46, 65);
+    --white: rgb(255, 255, 255);
+    --very-light-blue: rgb(106, 189, 244);
+    --poppins: "Poppins", sans-serif;
+    --jetbrains: "JetBrains Mono", monospace;
+}
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    min-height: 100vh;
+    background-color: var(--light-grey);
+    color: var(--white);
+    padding-inline: 12px;
+    padding-bottom: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+
+header,
+h1,
+h2,
+h4
+h5,
+h6 {   
+    font-family: 'Poppins', sans-serif;
+}
+
+.curson-pointer {
+    cursor: pointer;
+}
+
+
+.all-expenses {
+    margin-block: 1rem;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    gap: 1rem;
+    border-radius: 12px;
+}
+
+.filter-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn h2 {
+    font-size: 1.765rem;
+}
+
+.expense {
+    background-color: var(--light-grey);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-grey);
+    border-radius: 100vw;
+    border: 2px solid var(--light-grey);
+}
+
+footer{
+    background-color: var(--dark-grey);
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.full-details {
+    border-radius: 8px;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    display: inline-block;
+    min-width: 250px;
+    /* text-align: center; */
+    border: 2px solid var(--light-grey);
+    display: none;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    float: right;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--white);
+    border: 0;
+    background-color: var(--light-grey);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(217, 217, 217, 0.2);
+}
+

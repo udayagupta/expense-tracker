@@ -1,0 +1,61 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--light-grey);
+    overflow: auto;
+    table-layout: fixed;
+}
+
+.table-heading {
+    background-color: var(--light-grey);
+}
+
+.table-heading  th {
+    padding: 0.35rem;
+    border: 2px solid rgb(183, 183, 183);
+    font-size: 1.2765rem;
+    font-family: var(--poppins);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+tr {
+    text-align: center;
+    transition: 300ms linear;
+    max-width: 25%;
+}
+
+tr:nth-of-type(2n) {
+    background-color: var(--dark-blue);
+}
+
+tr:not([class="table-heading"]):hover {
+    background-color: rgba(128, 128, 128, 0.1);
+    cursor: pointer;
+}
+
+td {
+    font-size: 1.125rem;
+    border: 2px solid var(--light-grey);
+    padding: 0.2rem;
+    overflow-x: hidden;
+}
+
+caption {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td, th {
+    max-width: 25%; /* Set your desired max width */
+    word-wrap: break-word; /* Breaks long words to fit within the cell */
+    overflow: hidden; /* Hides overflow content */
+    text-overflow: ellipsis; /* Adds ellipsis (...) for overflowing text */
+    white-space: nowrap;
+}
+
+.edit-btn {
+    width: 100%;
+    margin-block: 4px;
+}
